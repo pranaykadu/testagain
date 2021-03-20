@@ -1,0 +1,29 @@
+:root{
+   --rowWidth:117rem; 
+}
+.row{
+    width:117rem;
+}
+
+.col-1-of-2{
+    width:calc( (rowWidth-60)/2);
+}
+
+.col-1-of-3{
+    width:calc( (rowWidth-120)/3);
+}
+
+.col-1-of-4{
+    width:calc( (rowWidth-180)/4);
+}
+
+.col-2-of-3{
+    width:calc( 2*((rowWidth-120)/3) +60);
+}
+
+.col-2-of-4{
+    width:calc( 2*((rowWidth-180)/4) +60);
+}
+.col-3-of-4{
+    width:calc( 3*((rowWidth-180)/4) +120);
+}

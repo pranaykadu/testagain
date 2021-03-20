@@ -1,0 +1,17 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "this is for training purpose only",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass sass/main.scss css/flexStyle.css -w"
+  },
+  "author": "pranay",
+  "license": "ISC",
+  "dependencies": {
+    "g": "^2.0.1",
+    "json-server": "^0.16.3",
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtel page design</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            display: flex;
+            max-width: 1080px;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        .header_container {
+            display: flex;
+            height: 74px;
+            max-width: 1080px;
+            justify-content: space-between;
+            background-color: bisque;
+            /* margin: 0 auto; */
+            align-items: center;
+            padding: 0, 10px;
+            flex-direction: row;
+
+        }
+
+        .logo-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: inherit;
+            background-color: burlywood;
+        }
+
+        .right {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: inherit;
+            width: 25%;
+        }
+
+        .header-brand {
+            min-width: 92px;
+            max-width: 92px;
+        }
+
+        .header {
+            height: 24px;
+            width: 100%;
+            max-width: 1080px;
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            /* z-index: 1; */
+            margin: 0 auto;
+
+        }
+
+        .header>div:last-child {
+            padding-right: 10px;
+        }
+
+        nav {
+            display: flex;
+            height: inherit;
+            width: 50%;
+            justify-content: flex-start;
+            flex-grow: 2;
+            align-items: center;
+
+        }
+
+        nav>div {
+            display: flex;
+            height: inherit;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 50%;
+            text-transform: uppercase;
+        }
+
+        .header>div {
+            padding-left: 10px;
+        }
+
+        .header ::after {
+            height: 20px;
+            width: 70%;
+            background-color: lightgray;
+            background-size: cover;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            /* z-index: 1; */
+        }
+
+        .upper {
+            width: 30px;
+            flex: 2 200px;
+            /* flex-grow: 3; */
+        }
+
+        .recharge-main {
+            width: 100%;
+            display: flex;
+            background-color: chocolate;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            justify-content: flex-start;
+        }
+
+        .recharge-main>.recharge-left {
+            /* display: flex; */
+            text-align: center;
+            flex: 0.65;
+        }
+
+        .recharge-right {
+            flex: 1;
+            overflow: hidden;
+            background-color: grey;
+        }
+
+        .recharge-right ul li {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: white;
+            padding: 8px 16px;
+            font-size: 12px;
+        }
+
+        .recharge-main>.recharge-right>.recharge-form {
+            width: 100%;
+            display: flex;
+        }
+
+        .recharge-main>.recharge-form>button {
+            margin-left: 3%;
+            border-radius: 4px;
+            background-color: white;
+            color: red;
+            width: 100px;
+            flex: 1;
+            font-size: 12px;
+            padding: 14px 25px;
+        }
+
+        main>.column {
+            padding: 18px;
+            margin-right: 16px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .square {
+            padding: 30px;
+            border-radius: 4px;
+            margin-right: 16px;
+            cursor: pointer;
+        }
+
+        main>.row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="upper"></div>
+        <div>Xstream</div>
+        <div>Airtel Payments Bank</div>
+        <div>Wynk</div>
+
+    </div>
+
+    <header class="header_container">
+        <div class="logo-box">
+            <div class="header-brand">
+                <a href="https://www.airtel.in/"><img draggable="false" class="brand"
+                        src="https://assets.airtel.in/static-assets/new-home/img/airtel-red.svg?v=1611049729410"
+                        alt="airtel"></a>
+            </div>
+        </div>
+        <nav>
+            <div>Prepaid</div>
+            <div>Postpaid</div>
+            <div>Broadband</div>
+            <div>Dth</div>
+            <div>Bank</div>
+            <div>Help</div>
+        </nav>
+        <div class="right">
+            <div>getapp</div>
+            <div>Airtel store</div>
+            <div>login</div>
+        </div>
+    </header>
+
+
+    <section class="recharge-main">
+        <div class="recharge-left">
+            <h2>Recharge and Pay Bill</h2>
+            <p>Get exciting offer</p>
+        </div>
+        <div class="recharge-right">
+            <ul>
+                <li class="active" data="recharge-rail-prepaid">Prepaid</li>
+                <li data="recharge-rail-postpaid">Postpaid</li>
+                <li data="recharge-rail-DTH">DTH</li>
+                <li data="recharge-rail-Broadband">Broadband</li>
+            </ul>
+
+            <div class="recharge-form">
+                <div>+91</div>
+                <input type="text" value="Enter Mobile Number">
+
+                <button>Pay Bill</button>
+            </div>
+        </div>
+    </section>
+    <div>
+        <h1><b>Experience our services</b></h1>
+    </div>
+    <main>
+        <div class="column">
+            <a class="square" href="https://www.airtel.in/prepaid-4g-sim/?icid=quick_action"
+                data-analytics="airtel services-buy prepaid"><img draggable="false"
+                    src="https://assets.airtel.in/static-assets/new-home/img/services-sim.svg?v=1611049729410"
+                    alt="Buy Prepaid">Buy Prepaid</a>
+            <a class="square" href="https://www.airtel.in/prepaid-4g-sim/?icid=quick_action"
+                data-analytics="airtel services-buy prepaid"><img draggable="false"
+                    src="https://assets.airtel.in/static-assets/new-home/img/services-sim.svg?v=1611049729410"
+                    alt="Buy Postpaid">Buy Postpaid</a>
+            <a class="square" href="https://www.airtel.in/broadband/?icid=quick_action"
+                data-analytics="airtel services-buy broadband"><img draggable="false"
+                    src="https://assets.airtel.in/static-assets/new-home/img/services-broadband.svg?v=1611049729410"
+                    alt="Buy Broadband">Buy Broadband</a>
+            <a class="square" href="https://www.airtel.in/dth/?icid=quick_action"
+                data-ab-dth="https://www.airtel.in/cat/dth/?icid=quick_action"
+                data-analytics="airtel services-buy dth"><img draggable="false"
+                    src="https://assets.airtel.in/static-assets/new-home/img/services-dth.svg?v=1611049729410"
+                    alt="Buy DTH">Buy DTH</a>
+            <a class="square" href="https://www.airtel.in/xstream/box?icid=quick_action"
+                data-analytics="airtel services-buy xstream"><img draggable="false"
+                    src="https://assets.airtel.in/static-assets/new-home/img/services-xstream.svg?v=1611049729410"
+                    alt="Buy Xstream">Buy Xstream</a>
+            <a class="square"
+                href="https://www.airtel.in/mnp/?requirement=MNP&amp;utm_source=MNP_direct&amp;icid=quick_action"
+                data-analytics="airtel services-port to airtel"><img draggable="false"
+                    src="https://assets.airtel.in/static-assets/new-home/img/services-porttoairtel.svg?v=1611049729410"
+                    alt="Port to Airtel">Port to Airtel</a>
+        </div>
+        <div class="row">
+            <a class="square" href="https://www.airtel.in/postpaid/prepaid-to-postpaid/?icid=quick_action"
+                data-analytics="airtel services-prepaid to postpaid"><img draggable="false"
+                    src="https://assets.airtel.in/static-assets/new-home/img/services-pretopost.svg?v=1611049729410"
+                    alt="Prepaid to Postpaid">Prepaid to Postpaid</a>
+            <a class="square" href="https://www.airtel.in/one-airtel-plan/?icid=quick_action"
+                data-analytics="airtel services-One Airtel Plan"><img draggable="false"
+                    src="https://assets.airtel.in/static-assets/new-home/img/one-airtel-plan.svg?v=1611049729410"
+                    alt="Prepaid to Postpaid">One Airtel Plan</a>
+            <a class="square"
+                href="https://www.airtel.in/bank/?utm_source=Internal&amp;utm_medium=QuickAction&amp;utm_campaign=Airtel&amp;icid=quick_action"
+                data-analytics="airtel services-airtel payments bank"><img class="icon-grayscale" draggable="false"
+                    src="https://assets.airtel.in/static-assets/selfcare/images/bankicons/64px/airtel-payments-bank.png?v=1611049729410"
+                    alt="Prepaid to Postpaid">Airtel Payments Bank</a>
+            <a class="square" href="https://www.airtel.in/ir-packs/?icid=quick_action"
+                data-analytics="airtel services-international roaming"><img draggable="false"
+                    src="https://assets.airtel.in/static-assets/new-home/img/services-ir.svg?v=1611049729410"
+                    alt="International Roaming">International Roaming</a>
+            <a class="square" 
+            <a class="square" href="https://www.airtel.in/wifi-calling?icid=quick_action"
+                   data-analytics="airtel services-wifi calling"><img draggable="false"
+                   src="https://assets.airtel.in/static-assets/new-home/img/service-wifi.svg?v=1611049729410"
+                    alt="WiFi Calling">WiFi Calling</a>>
+        </div>
+    </main>
+</body>
+</html>

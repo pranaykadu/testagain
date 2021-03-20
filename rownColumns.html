@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; 
+  line-height: 2.4rem;
+}
+        
+        .row{
+            max-width: 114rem;
+            margin:5rem auto;
+              
+        }
+        .row [class^="col-"] {
+              float: left; }
+
+
+              .row .col-1-of-2 {
+              width: calc((100% - 6rem) / 2); 
+              background-color: red;
+            }
+            .row .col-1-of-3 {
+              width: calc((100% - 12rem) / 3) ; 
+              background-color: red;
+            }
+        
+        .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+
+      .row:not(:last-child) {
+    margin-bottom: 8rem; }
+    </style>
+</head>
+<body>
+<header>
+    <!-- <div class="row">
+        <div class="col-1-of-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi nam ducimus molestias, sed reiciendis laboriosam illo quo repellat adipisci voluptatibus minima dignissimos harum excepturi, libero nulla fugiat error dolores temporibus?</div>
+        <div class="col-1-of-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque labore, facilis alias dolorem eaque nulla aspernatur nemo quasi dolores minus ipsum exercitationem distinctio suscipit modi voluptatum, perspiciatis omnis iusto at.</div>
+    </div> -->
+    <div class="row">
+        <div class="col-1-of-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio assumenda culpa tempore ut error harum alias aperiam in, nulla maiores perferendis asperiores corporis. Nemo culpa nisi amet odio ullam aliquam.</div>
+        <div class="col-1-of-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio assumenda culpa tempore ut error harum alias aperiam in, nulla maiores perferendis asperiores corporis. Nemo culpa nisi amet odio ullam aliquam.</div>
+        <div class="col-1-of-3"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio assumenda culpa tempore ut error harum alias aperiam in, nulla maiores perferendis asperiores corporis. Nemo culpa nisi amet odio ullam aliquam.</div>
+    </div>
+</header>
+</body>
+</html>

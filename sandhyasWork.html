@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>airtel using flex</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            box-sizing: border-box;
+            margin: 0 auto;
+            max-width: 1080px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .first-nav {
+            width: 100%;
+            max-width: 1080px;
+            height: 25px;
+            padding-left: 20px;
+            letter-spacing: 1PX;
+        }
+
+        .btn {
+            border: 1px solid rgb(223, 28, 28);
+            color: red;
+            background-color: white;
+        }
+
+        .upper {
+            height: 35px;
+            width: 100%;
+            max-width: 1080px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 0 auto;
+            letter-spacing: 1px;
+        }
+
+        .upper>div {
+            padding-left: 10px;
+
+        }
+
+        .upper-right {
+            display: flex;
+            letter-spacing: 1px;
+        }
+
+        .upper-right>div {
+            padding-left: 10px;
+        }
+
+        .header-container {
+            max-height: 1080px;
+            height: 55px;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            background-color: blanchedalmond;
+            padding: 0 auto;
+            flex-direction: row;
+        }
+
+        .logo-box {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 25PX;
+        }
+
+        .brand {
+            min-width: 92px;
+            max-width: 92px;
+        }
+
+        .nav-container {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .nav-container>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .right-container {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            width: 25%;
+        }
+
+        .right-container>div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .slide-show {
+            width: 100%;
+            height: 340px;
+            background-color: thistle;
+        }
+
+        .slide-show {
+            width: 100%;
+            height: 30vw;
+            max-height: 340px;
+            margin: auto auto o;
+            overflow: hidden;
+            color: #393939;
+            z-index: 2;
+        }
+        
+        .slide{
+            display: flex;
+            min-width: 100%;
+            min-height: 100%;
+            max-height: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform .75s cubic-bezier(.175,.885,.32,1);
+        }
+
+
+        main {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-wrap: wrap;
+            background-color: pink;
+
+        }
+
+        h4 {
+            text-align: left;
+            padding-left: 20px;
+            font-size: x-large;
+            text-transform: uppercase;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .sec-box {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        main>div {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-basis: 100px;
+        }
+
+        .slide-show-div{
+            position: absolute;
+            top: 100px;
+            left: -227px;
+            overflow: hidden;
+            height: 300px;
+            width: 1680px;
+        }
+
+        .slidesContainer{
+            display: flex;
+         position: absolute;
+         /* max-width: 1680px; */
+         top: 0;
+         left:0;
+         border:1px solid red;
+       
+          animation: slides 12s infinite ;
+         animation-fill-mode: forwards; 
+         animation-duration: 16s;
+         /* animation-direction: alternate; */
+        }
+
+        @keyframes slides {
+            
+            0%{
+                left:0px;
+            }
+            25%{
+                left:-1680px;
+            }
+            50%{
+                left:-3360px;
+            }
+            100%{
+                left:-5040px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-nav">
+        <div>We use cookies to ensure you get the best experience.
+            <button class="btn">Got It!
+        </div>
+    </div>
+    <div class="upper">
+        <div>Xstream</div>
+        <div>Airtel Payments Bank</div>
+        <div>Wynk</div>
+        <div class="upper-right">
+            <div>Personal</div>
+            <div>Career</div>
+            <div>Business</div>
+            <div>Investore</div>
+        </div>
+    </div>
+
+    <header class="header-container">
+        <div class="logo-box">
+            <a href="https://www.airtel.in/"><img draggable="false" class="brand"
+                    src="https://assets.airtel.in/static-assets/new-home/img/airtel-red.svg?v=1611049729410"
+                    alt="airtel"></a>
+        </div>
+        <nav class="nav-container">
+            <div>Prepaid</div>
+            <div>Postpaid</div>
+            <div>Broadband</div>
+            <div>dth</div>
+            <div>bank</div>
+            <div>help</div>
+        </nav>
+        <div class="right-container">
+            <div>getapp</div>
+            <div>airtel store</div>
+            <div>login</div>
+        </div>
+    </header>
+    <div class="slide-show-div" >
+        <div class="slidesContainer">
+            
+                <img draggable="false" data-banner="banner-1"
+                    data-banner-src="https://assets.airtel.in/static-assets/new-home/img/banner-1.jpg?v=1611049729410+30"
+                    src="https://assets.airtel.in/static-assets/new-home/img/banner-1.jpg?v=1611049729410+30"
+                    alt="banner-1">
+            
+            
+                <img draggable="false" data-banner="banner-2"
+                    data-banner-src="https://assets.airtel.in/static-assets/new-home/img/banner-2.jpg?v=1611049729410+30"
+                    alt="banner-2"
+                    src="https://assets.airtel.in/static-assets/new-home/img/banner-2.jpg?v=1611049729410+30">
+            
+            
+                <img draggable="false" data-banner="banner-3"
+                    data-banner-src="https://assets.airtel.in/static-assets/new-home/img/banner-3.jpg?v=1611049729410+30"
+                    alt="banner-3"
+                    src="https://assets.airtel.in/static-assets/new-home/img/banner-3.jpg?v=1611049729410+30">
+            
+            
+                <img draggable="false" data-banner="banner-4"
+                    data-banner-src="https://assets.airtel.in/static-assets/new-home/img/banner-4.jpg?v=1611049729410+30"
+                    alt="banner-4"
+                    src="https://assets.airtel.in/static-assets/new-home/img/banner-4.jpg?v=1611049729410+30">
+            
+        </div>
+    </div>
+    <main>
+        <h4>experience our services</h4>
+        <div class="box">
+            <div>
+                <p>Buy</p>
+                <p>Prepaid</p>
+            </div>
+            <div>
+                <p>Buy</p>
+                <p>Postpaid</p>
+            </div>
+            <div>
+                <p>Buy</p>
+                <p>Broadband</p>
+            </div>
+            <div>
+                <p>Buy</p>
+                <p>DTH</p>
+            </div>
+            <div>
+                <p>Buy</p>
+                <p>Xstream</p>
+            </div>
+            <div>
+                <p>Port</p>
+                <p>to Airtel</p>
+            </div>
+        </div>
+        <div class="sec-box">
+            <div>
+                <p>Prepaid</p>
+                <p>to Postpaid</p>
+            </div>
+            <div>
+                <p>One</p>
+                <p>Airtel Plan</p>
+            </div>
+            <div>
+                <p>Airtel</p>
+                <p>Paymets Bank</p>
+            </div>
+            <div>
+                <p>International</p>
+                <p>Roaming</p>
+            </div>
+            <div>
+                <p>Business</p>
+                <p>Postpaid</p>
+            </div>
+            <div>
+                <p>Wifi</p>
+                <p>Calling</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>-task of editing-</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 40px;
+             width: 30%; 
+            
+            /* display: flex; */
+         
+        }
+        .content{
+            height: 28px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+            text-transform: uppercase;
+            background-color: burlywood;
+        }
+        .content>p{
+        padding-left: 20px;
+        } 
+
+        .search{
+             display: flex;
+            justify-content: space-between;
+             flex-direction: row;
+            align-items: center;
+            background-color: cadetblue;
+            height: 70px;
+            flex-wrap: wrap;
+        }
+        .search>.left{
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+             align-items: center; 
+            text-transform: uppercase;
+        }
+        .search>.right{
+            height: inherit;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center; 
+            text-transform: uppercase;
+        }
+
+        .symbol{
+            height: 20px;
+            width: 100%;
+            display: flex;
+            /* justify-content: space-between;*/
+            align-items: center;
+            flex-direction: row;
+            background-color: peru;
+        }
+        .symbol>.chart{
+            width: 30%;
+            display: flex;
+            align-items: center;
+        }
+        .symbol>.price{
+            width: 30%;
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .main-box{
+            height: 200px;
+            width: 100%;
+            background-color: plum;
+        }
+        .heading{
+            height: 20px;
+            width: 100%;
+            display: flex;
+            letter-spacing: 1px;
+            background-color: gray;
+        }
+       .main-box> .box{
+            width: 100%;
+            height: inherit;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .box>div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 50%;
+            justify-content: space-evenly; 
+        }
+        .side-button{
+            display: flex;
+            flex-direction: row;
+        }
+        .side-button>div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        button{
+            transform: translateY(90%);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        X
+        <p>state bank of india</p>
+    </div>
+
+    <div class="search">
+        <div class="left">
+        <h4>sbin 2080ce</h4>
+        <p>nfo 25feb21</p>
+         </div>
+        <div class="right"> 
+            <h5>17.70</h5>
+            <p>-2.60(17.22%)</p>
+        </div>
+    </div>
+
+    <div class="symbol">
+        <div class="chart">
+            <p>Chart</p>
+        </div>
+           <div class="price">
+                <p>Price Alert</p>
+        </div>
+    </div>
+
+    <div class="main-box">
+        <div class="heading">
+            <h5>Market Status</h5>
+        </div>
+        <div class="box">
+            <div class="first-row">
+            <div>
+                <p>Open</p>
+                <h4>14.30</h4>
+            </div>
+            <div>
+                <p>Upper Circuit</p>
+                <h4>33.20</h4>
+            </div>
+            <div>
+                <p>Volume</p>
+                <h4>66,6,000</h4>
+            </div>
+            
+            
+        </div>
+        <div class="sec-row">
+            <div>
+                <p>close</p>
+                <h4>15.10</h4>
+            </div>
+            <div>
+                <p>Lower Circuit</p>
+                <h4>0.05</h4>
+            </div>
+            
+            <div>
+                <p>Avg.Traded Prc.</p>
+                <h4>14.30</h4>
+            </div>
+        </div>
+        <div class="side-button">
+            <div>
+                <button>Oveview</button>
+                <button>Orders</button>
+                <button>Portfollo</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+
+
+</body>
+</html>

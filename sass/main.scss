@@ -1,0 +1,50 @@
+@import "_variable";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  /* font-size: 62.5%; */
+   font-size: 10px;
+}
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem; }
+
+ 
+
+// .header__logo {
+//     height: 3.5rem; 
+    
+   
+// }
+//   .header__logo-box {
+//     display: flex;
+   
+//     }
+  
+    .header__text-box {
+        /* position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        background-color: green;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        text-align: center; }
+        @import "./components/header";
+        @import "./layout/layout"

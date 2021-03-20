@@ -1,0 +1,90 @@
+{
+  "employees": [
+    {
+      "empid": 1,
+      "email": "test@test.com",
+      "salary": 10000
+    },
+    {
+      "id": "123",
+      "email": "test@test1.com",
+      "salary": "20000"
+    },
+    {
+      "id": "124",
+      "email": "test@test2.com",
+      "salary": "30000"
+    },
+    {
+      "id": "ttt",
+      "email": "ppp",
+      "salary": "122"
+    },
+    {
+      "id": "321",
+      "email": "t@t.com",
+      "salary": "2000"
+    },
+    {
+      "id": "test",
+      "email": "test",
+      "salary": "123344"
+    },
+    {
+      "id": 1103,
+      "email": "p@test.com",
+      "salary": "1000"
+    },
+    {
+      "id": "ZTUCQS7"
+    },
+    {
+      "id": "46qC-58"
+    },
+    {
+      "id": 2121,
+      "email": "test@test1.com",
+      "salary": "20000"
+    },
+    {
+      "id": 2122,
+      "email": "test@test1.com",
+      "salary": "10000"
+    },
+    {
+      "id": "n8scu02",
+      "email": "",
+      "salary": ""
+    },
+    {
+      "id": "12345",
+      "email": "test",
+      "salary": "5555"
+    },
+    {
+      "id": "1212",
+      "email": "test@test1212.com",
+      "salary": "1234"
+    },
+    {
+      "id": "123456",
+      "email": "test@t.com",
+      "salary": "1234"
+    },
+    {
+      "id": "120321",
+      "email": "march@2021.com",
+      "salary": "123456"
+    },
+    {
+      "id": "120321120321",
+      "email": "12march@2021.com",
+      "salary": "123456"
+    },
+    {
+      "id": "5",
+      "email": "12@march.com",
+      "salary": "55"
+    }
+  ]
+}

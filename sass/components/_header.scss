@@ -1,0 +1,39 @@
+.header {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/DSC04101.JPG); */
+    background-image: linear-gradient(to right bottom,rgba(255,99,33,1) ,rgba(200,200,200,.8),rgba(13,88,08,1)), url(../img/DSC04101.JPG);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    -moz-clip-path:polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); 
+
+    &__logo {
+        height: 3.5rem; 
+    }
+    // &__logo-box {
+    //     display: flex;
+       
+    //     }
+    &__text-box {
+             position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            background-color: $bg-color;
+            // display: flex;
+            // flex-direction: column; 
+            // justify-content: center;
+            // align-items: center;
+            text-align: center; }
+    &__newContainer{
+      width:100%;
+      background-color: red;
+    }
+    
+}
